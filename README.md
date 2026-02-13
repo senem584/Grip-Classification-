@@ -37,11 +37,11 @@ Use `pip install -r requirements.txt` to install the necessary dependencies.
 3. To export these signals, the Muscle BioAmp BisCute has (1) **GND**, (2) a **voltage supply (VCC)**, and (3) an **analog output (OUT)**. These are connected to the ESP32 which is powered through a laptop/computer.  
    * **GND → ESP32 GND**  
    * **VCC → 5V**  
-   * **OUT → an analog/ADC pin** (any supported ESP32 analog input pin)
+   * **OUT → an analog/ADC pin** (any supported ESP32 analog input pin) - We utilized pin 33.
 4. The image below displays a visual of the setup.  
 <img width="2880" height="1620" alt="image" src="https://github.com/user-attachments/assets/1b345874-f2c7-40e4-a7a0-338addeb70ff" />
 
-Sensor reference:  
+Image/Setup reference:  
 [https://github.com/upsidedownlabs/Muscle-BioAmp-BisCute](https://github.com/upsidedownlabs/Muscle-BioAmp-BisCute)
 
 ### Verification 
@@ -60,7 +60,7 @@ Sensor reference:
 4. Flash the code onto the ESP32, and allow data to continuously collect for **5000 samples**.
 5. When data stops collecting, the hand grip can be released.  
 6. Export the data as a `.csv` file, and name the file after the specific grip being performed (e.g., `Spherical.csv`).
-7. Complete this **5 times** with each hand grip.
+7. Complete these steps **5 times**, once for each hand grip type. 
 8. Put all of the `.csv` files into a folder labeled *Data* and upload it into Google Drive.
 
 ### Training Model
