@@ -27,10 +27,10 @@ The image below displays a visual of the setup.
 
 ## How to Use
 ### Using Existing Data 
-1. Download [collected grip data](/grip-data-(collected)/) onto your laptop and upload the folder to Google Drive. Ensure the folder is labeled *Data* within the Google Drive. 
+1. Download [collected grip data](/Grip-Data-(Collected)/) onto your laptop and upload the folder to Google Drive. Ensure the folder is labeled *Data* within the Google Drive. 
 
 ### Collecting Data
-1. Download the [data collection](/data-collection/) folder and upload the .ino file to the Arduino IDE.
+1. Download the [data collection](/Data-Collection/) folder and upload the .ino file to the Arduino IDE.
 2. Follow the [setup](#setup) instructions for [data collection](#data-collection).
 3. Perform a hand grip (spherical, palmer, tip, hook, lateral, or cylindrical) and hold that position. 
 4. Flash the code onto the ESP32, and allow data to continuously collect for 5000 samples.
