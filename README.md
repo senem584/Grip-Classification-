@@ -1,7 +1,8 @@
-# Grip-Classification
+# Hand Grip Classification
 ## Table of Contents
 * [Project Overview](#project-overview)
 * [Materials Required](#materials-required)
+* [Requirements](#requirements)
 * [Setup](#setup)
 * [Implementation](#implementation-instructions)
 ## Project Overview
@@ -13,7 +14,10 @@ When performing different types of hand grips, different forearm muscles are act
 * LilyGo ESP32 T-Display
 * ESP32
 * Arduino IDE
-* Google Collab/Google Drive
+* Google Drive (& Google Collab)
+
+## Requirements 
+Use 'pip install -r requirements.txt' to install the necessary dependencies. 
 
 ## Setup
 ### Data Collection 
@@ -27,7 +31,6 @@ The image below displays a visual of the setup.
 ### Verification 
 1. Apply conductive electrode gel
 2. Follow the same instructions from [data collection setup](#data-collection), except the microcontroller will now be a LilyGo ESP32 T-Display. The connections are the same, but the microcontroller is slightly different, and it provides a display screen. This allows for portable display. THe LilyGo ESP32 T-Display should be connected to the computer and person. 
-
 
 ## Implementation Instructions 
 ### Using Existing Data 
@@ -57,4 +60,6 @@ The image below displays a visual of the setup.
 5. Download the *User_Setup_Library* within the [src](/src/) folder. 
 6. Manually change the *TFT_eSPI library* to be the downloaded *User_Setup_Library*
 7. Ensure the .h file is within the same folder as the .ino, ensure all of the proper libraries are downloaded, and that the proper device is selected.
-8. Flash the code onto the LilyGo ESP32 T-Display. Perform different hand grips and watch the classification along with the model's confidence. 
+8. Flash the code onto the LilyGo ESP32 T-Display. Perform different hand grips and watch the classification along with the model's confidence.
+
+A detailed paper on this project can be found within the [docs](/docs/) folder. Verification images (confusion matrix and model accuracy reports) can be found within the [media](/media/) folder. 
